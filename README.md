@@ -63,27 +63,38 @@ DoctorAppointmentSystem/
 ## API Endpoints
 ### User Authentication
 ```
-**Method	Endpoint	  Description**
-  POST	  /register	  User registration
-  POST	  /login	    User login
-  GET	    /logout	    User logout
++----------+------------+-------------------+
+| Method   | Endpoint   | Description       |
++----------+------------+-------------------+
+| POST     | /register  | User registration |
+| POST     | /login     | User login        |
+| GET      | /logout    | User logout       |
++----------+------------+-------------------+
 ```
 ### Doctor Management
 ```
-**Method	Endpoint	    Description**
-  GET	    /doctors	    Fetch all doctors
-  GET	    /doctors/{id}	Get doctor details by ID
-  POST	  /doctors	Add a new doctor
-  PUT	    /doctors/{id}	Update doctor details
-  DELETE	/doctors/{id}	Remove a doctor
++----------+-------------------+----------------------------+
+| Method   | Endpoint          | Description                |
++----------+-------------------+----------------------------+
+| GET      | /doctors          | Fetch all doctors          |
+| GET      | /doctors/{id}     | Get doctor details by ID   |
+| POST     | /doctors          | Add a new doctor           |
+| PUT      | /doctors/{id}     | Update doctor details      |
+| DELETE   | /doctors/{id}     | Remove a doctor            |
++----------+-------------------+----------------------------+
+
 ```
 ### Appointment Management
-Method	Endpoint	Description
-GET	/appointments	View all appointments
-GET	/appointments/{id}	Get appointment details by ID
-POST	/appointments	Book an appointment
-PUT	/appointments/{id}	Update appointment details
-DELETE	/appointments/{id}	Cancel an appointment
+```
++----------+--------------------------+-------------------------------+
+| Method   | Endpoint                 | Description                  |
++----------+--------------------------+-------------------------------+
+| GET      | /appointments            | View all appointments        |
+| GET      | /appointments/{id}       | Get appointment details by ID|
+| POST     | /appointments            | Book an appointment          |
+| PUT      | /appointments/{id}       | Update appointment details   |
+| DELETE   | /appointments/{id}       | Cancel an appointment        |
++----------+--------------------------+-------------------------------+
 ```
 ---
 
